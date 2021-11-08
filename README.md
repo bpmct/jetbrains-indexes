@@ -1,6 +1,7 @@
-# coder-project-template
+# coder-jetbrains-indexes
 
-An example template for building a custom [Coder](https://coder.com/docs) workspace around a project. This includes:
+An example template with JetBrains [shared indexes](https://www.jetbrains.com/help/idea/shared-indexes.html) for faster workspace start times.
+Uses the [intellij-community](https://github.com/JetBrains/intellij-community) project.
 
 * Coder workspace template - `.coder/coder.yaml`
 * Custom image for Coder - `.coder/img`
@@ -30,5 +31,3 @@ An example template for building a custom [Coder](https://coder.com/docs) worksp
 ---
 
 To modify the image or workspace definition, simply push to `main` . GitHub actions will re-build the image and Coder will notify developers when an update is available for their workspace.
-
-Check out this video for an overview on how this works: https://youtu.be/BrZhBJtjkYk?t=104
