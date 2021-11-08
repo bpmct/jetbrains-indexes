@@ -1,5 +1,5 @@
-# Use our docs for reference:
-# https://coder.com/docs/workspaces/workspaces-as-code/templates
+# yaml-language-server: $schema=https://stable.cdr.dev/api/private/template/schemas/wac.schema.json
+
 version: 0.2
 workspace:
   type: "kubernetes"
@@ -17,6 +17,7 @@ workspace:
         value: 30
   configure:
     start:
+      value: 
         - name: "Clone the git repository, if it doesn't exist"
           env:
             GIT_REMOTE: https://github.com/JetBrains/intellij-community
@@ -40,4 +41,3 @@ workspace:
           command: curl https://gist.githubusercontent.com/bpmct/b48b99007284444eea94fe9e96d4a329/raw/set_first_dir.sh | sh
           env:
             PROJECT_FOLDER: /home/coder/intellij-community
-
